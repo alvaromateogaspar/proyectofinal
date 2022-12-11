@@ -1,0 +1,38 @@
+{% extends "Formula1App/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+{% for circuito in circuitos %}
+
+<section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{circuitos.imagen.url}}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-lower">{{circuito.nombre}}</span>
+            <span class="section-heading-upper">Ciudad: {{circuito.ciudad}}</span>
+            <span class="section-heading-upper">País: {{circuito.pais}}</span>
+            <span class="section-heading-upper">Vuelta rápida: {{circuito.vuelta_rapida}}</span>
+            <span class="section-heading-upper">Longitud: {{circuito.longitud}}</span>
+            <span class="section-heading-upper">Curvas: {{circuito.numero_de_curvas}}</span>
+            <span class="section-heading-upper">Número de vueltas: {{circuito.numero_de_vueltas}}</span>
+
+
+        
+
+          </h2>
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endfor %}
+
+{% endblock %}
+    
+

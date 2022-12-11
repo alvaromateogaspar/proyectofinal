@@ -1,0 +1,45 @@
+ 
+{% extends "Formula1App/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+ 
+ <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'Formula1App/img/principal.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper">Todo sobre la temporada 2022/2023</span>
+          </h2>
+          <p class="mb-3">Si parpadean, se lo pierden
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+    <!-- Message -->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Estadisticas, circuitos, pilotos...</span>
+
+              </h2>
+              <p class="mb-0">Todo sobre la categoría reina del automovilismo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% endblock %}
